@@ -1,0 +1,220 @@
+html{
+	background-color: #FBFBF2;
+	font-size: 12.50px;
+}
+
+.container{
+	max-width: 1250px;
+	height: 100vh;
+	margin: auto;
+	position: relative;
+}
+
+.calculator{
+	position: inherit;
+	width: 350px;
+	margin: auto;
+	height: 500px;
+	top:20px;
+	background-color: #394960;
+	border-radius: 30px;
+}
+
+.calculator input{
+	position: inherit;
+	height: 70px;
+	width: 300px;
+	top: 60px;
+	left: 25px;
+	font-size: 30px;
+}
+
+.buttonOne {
+	position: inherit;
+	height: 240px;
+	width: 300px;
+	left: 25px;
+	top: 230px;
+}
+
+.buttonOne ul{
+	list-style-type: none;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.buttonOne ul li{
+	float: left;
+	min-width: 60px;
+	min-height: 30px;
+	text-align: center;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background-color: #4c4f56;
+	border-radius: 10px;
+	vertical-align: middle;
+	line-height: 30px;
+	color: white;
+}
+
+.buttonOne ul li a{
+	font-size: 20px;
+	height: 20px;
+}
+
+.divideNormal{
+	margin-right: 0px !important;
+}
+.minusNormal{
+	margin-right: 0px !important;
+}
+.plusNormal{
+	margin-right: 0px !important;
+}
+.multiplicationNormal{
+	margin-right: 0px !important;
+}
+
+.abacus{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.abacusBase{
+	position: absolute;
+	width: 80%;
+	height: 10%;
+	left: 10%;
+	top: 85%;
+	background-image: url("../imgs/retina_wood.png");
+	z-index: 3;
+}
+
+.abacusLeftPilar{
+	position: inherit;
+	height: 90%;
+	width: 5%;
+	left: 15%;
+	background-image: url("../imgs/retina_wood.png");
+	z-index: 2;
+}
+.abacusRightPilar{
+	position: inherit;
+	height: 90%;
+	width: 5%;
+	right: 15%;
+	background-image: url("../imgs/retina_wood.png");
+	z-index: 2;
+}
+
+.abacusLine1{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 5%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine2{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 12%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine3{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 19%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine4{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 26%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine5{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 33%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine6{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 40%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine7{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 47%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine8{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 54%;
+	background-image: url("../imgs/squared_metal.png");
+}
+.abacusLine9{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 61%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+.abacusLine10{
+	position: absolute;
+	height: 1%;
+	width: 70%;
+	left: 15%;
+	top: 68%;
+	background-image: url("../imgs/squared_metal.png");
+	z-index: 1;
+}
+
+.layer1 {
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.layer2 {
+	-webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.layer3 {
+	-webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.layer4 {
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+}
