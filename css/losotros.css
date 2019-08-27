@@ -1,0 +1,35 @@
+@media screen /*extra small cellphones*/
+and (min-width: 10px)
+and (max-width: 600px){
+	html{
+	font-size: 2vw;
+	font-family: "modern_sanslight";
+	}
+	.hideOnsmall {
+		display: none;
+	}
+}
+
+@media screen /*small tablets and large cellphones*/
+and (min-width: 601px)
+and (max-width: 767px){
+	html{
+	font-size: 2vw;
+	font-family: "modern_sanslight";
+	}
+	.hideOnsmall {
+		display: none;
+	}
+}
+
+@media screen /*landscapetablet*/
+and (min-width: 768px)
+and (max-width: 991px){
+	html{
+	font-size: 2vw;
+	font-family: "modern_sanslight";
+	}
+	.hideOnsmall {
+		display: none;
+	}
+}

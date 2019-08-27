@@ -1,0 +1,606 @@
+@media screen /*laptop, desktop*/
+and (min-width: 992px){
+	html{
+	font-size: 2vw;
+	font-family: "modern_sanslight";
+	background: url(../imgs/background.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	.showOnsmall {
+		display: none;
+	}
+
+	body {
+		background-color: transparent;
+		z-index: -3;
+	}
+	.containerHeader{
+		position: absolute;
+		top:0vh;
+		left: 0vh;
+		z-index: 6;
+		width: 100%;
+		height: 96vh;
+		background-color: #4646FF;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+
+	}
+
+	.navbar{
+		position: fixed;
+		top:0rem;
+		left: 0rem;
+		z-index: 5;
+		width: 100%;
+		height: 9vh;
+		background-color: #4646FF;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+	}
+
+	.navbarws{
+		position: fixed;
+		top:0rem;
+		left: 0rem;
+		z-index: 7;
+		max-width: 6000px !important;
+		width: 100%;
+		height: 9vh;
+		background-color: #4646FF;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+
+	}
+
+	.containerNavbar {
+		position: fixed;
+		top:0rem;
+		z-index: 12;
+		min-width: 100vw;
+		background-color: #4646FF;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+	}
+
+	div.containerNavbar ul{
+		list-style-type: none;
+		position: absolute;
+	  	margin: 0;
+	  	padding: 0;
+	  	overflow: hidden;
+		background-color: #4646FF;
+	}
+
+	div.containerNavbar ul li{
+		float: left;
+	}
+
+	div.containerNavbar ul li a{
+		display: block;
+	  	color: white;
+	  	text-align: center;
+	  	font-size: 1rem;
+	  	padding: .3rem;
+	  	text-decoration: none;
+	}
+
+	div.containerNavbar ul li a:hover{
+	  	font-size: 1.2rem;
+	}
+
+	.logoName {
+		font-family: "great_fighter" !important;
+	}
+
+	.header {
+		position: relative;
+		height: 94vh;
+		width: 100%;
+		background-color: transparent;
+		top:0px;
+	}
+
+	.socialButtons {
+		position:absolute;
+		top: 8vh;
+		right: -15vw;
+		z-index: 6;
+		opacity: 0;
+		transition: 1800ms;
+	}
+	.socialButtons.animate{
+		position:absolute;
+		top: 8vh;
+		right: 5vw;
+		z-index: 6;
+		opacity: 1;
+	}
+
+	div.socialButtons ul{
+		list-style-type: none;
+	  	margin: 0;
+	  	padding: 0;
+	  	overflow: visible;
+	  	background-color: transparent;
+	}
+
+	div.socialButtons ul li{
+		float: left;
+	}
+
+	div.socialButtons ul li a{
+		display: block;
+	  	color: white;
+	  	text-align: center;
+	  	font-size: 1.5rem;
+	  	padding: .2rem;
+	  	text-decoration: none;
+	  	border-radius: .4rem;
+	}
+
+	div.socialButtons ul li a:hover{
+		display: block;
+	  	color: black;
+	  	text-align: center;
+	  	font-size: 2rem;
+	  	padding: .2rem;
+	  	text-decoration: none;
+	}
+
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	/* Tooltip text */
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  background-color: black;
+	  color: #fff;
+	  text-align: center;
+	  padding: 0.3rem;
+	  border-radius: 6px;
+	  font-size: 0.5rem;
+	  /* Position the tooltip text - see examples below! */
+	  position: absolute;
+	  z-index: 6;
+	  width: 2rem;
+	  top: 2.2rem;
+	  right: 50%; 
+	  margin-right: -1.2rem; /* Use half of the width (120/2 = 60), to center the tooltip */
+	}
+
+	.descriptionList {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	/* Tooltip text */
+	.descriptionList .descriptionText {
+	  background-color: transparent;
+	  text-align: left;
+	  font-size: .8rem;
+	  /* Position the tooltip text - see examples below! */
+	  position: absolute;
+	  z-index: 6;
+	  width: 2rem;
+	  top: 2.2rem;
+	  left: 0rem; /* Use half of the width (120/2 = 60), to center the tooltip */
+	}
+
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	}
+
+	.textNavbar {
+		opacity: 0;
+		transition: 1500ms;
+		position: absolute;
+		left: -15vw;
+	}
+
+	.textNavbar.animate{
+		opacity: 1;
+		position: absolute;
+		left: 0vw;
+	}
+
+	.welcome {
+		opacity: 0;
+		position:absolute;
+		width: 22rem;
+		font-size: 1.9rem;
+		text-align: center;
+		top:0vh;
+		right: 50%;
+		margin-right: -11rem;
+		z-index: 6;
+		transition: 1800ms;
+	}
+	.welcome p{
+		margin:0px;
+		color:white;
+	}
+
+	.welcome.animate{
+		opacity: 1;
+		position:absolute;
+		width: 22rem;
+		font-size: 1.9rem;
+		text-align: center;
+		top:14vh;
+		right: 50%;
+		margin-right: -11rem;
+		z-index: 6;
+		transition: 1800ms;
+	}
+
+	.shapeCartoon {
+		position: absolute;
+		top:40vh; 
+		height: 7rem;
+		width: 7rem;
+		right: 50%;
+		margin-right: -3.5rem;
+		background-color: white;
+		z-index: 6;
+		overflow: hidden;
+		opacity: 0;
+		transition: 1500ms;
+	}
+
+	.shapeCartoon.animate{
+		opacity: 1;
+		position: absolute;
+		top:27vh; 
+		height: 7rem;
+		width: 7rem;
+		right: 50%;
+		margin-right: -3.5rem;
+		border-radius: 3.5rem;
+		border-style: solid;
+		border-color: #CCCCCC;
+		z-index: 6;
+		overflow: hidden;
+		transition: 1800ms;
+	}
+
+	.shapeCartoon img{
+		max-height: 100%;
+		max-width: 100%;
+		margin-left: auto;
+	  	margin-right: auto;
+	  	display: block;
+	  	z-index: 2;
+	}
+
+	.briefInfo {
+		opacity: 0;
+		position: absolute;
+		top:100vh;
+		width: 15rem;
+		right: 50%;
+		color:white;
+		margin-right: -7.5rem;
+		text-align: center;
+		font-size: 1.1rem;
+		z-index: 6;
+		transition: 1500ms;
+	}
+
+	.briefInfo.animate{
+		opacity: 1;
+		position: absolute;
+		top:60vh;
+		width: 15rem;
+		right: 50%;
+		color:white;
+		margin-right: -7.5rem;
+		text-align: center;
+		font-size: 1.1rem;
+		z-index: 6;
+	}
+
+	.briefInfo p{
+		margin:0px;
+	}
+
+	.seemore{
+		position: absolute;
+		top:95vh;
+		width: 6rem;
+		color: white;
+		right: 50%;
+		margin-right: -3rem;
+		text-align: center;
+		z-index: 6;
+		font-size: .7rem;
+		cursor: pointer;
+		opacity: 0;
+		transition: 1500ms;
+	}
+
+	.seemore.animate{
+		position: absolute;
+		top:80vh;
+		width: 6rem;
+		color: white;
+		right: 50%;
+		margin-right: -3rem;
+		text-align: center;
+		z-index: 6;
+		font-size: .7rem;
+		cursor: pointer;
+		opacity: 1;
+	}
+
+	.seemore p{
+		padding: 0px;
+		margin:0px;
+	}
+
+	.jump {
+    	-webkit-animation: mover 1s infinite  alternate;
+    	animation: mover 1s infinite  alternate;
+	}
+	.jump {
+    	-webkit-animation: mover 1s infinite  alternate;
+    	animation: mover 1s infinite  alternate;
+	}
+	@-webkit-keyframes mover {
+    	0% { transform: translateY(0); }
+    	100% { transform: translateY(-.4rem); }
+	}
+	@keyframes mover {
+    	0% { transform: translateY(0); }
+    	100% { transform: translateY(-.4rem); }
+	}
+
+	.sectionOne {
+		position: relative;
+		width: 100%;
+		background-color: transparent;
+		top:0vh;
+		height: 100vh;
+	}
+
+	.aboutme {
+		position: absolute;
+		top:20vh;
+		width: 40vw;
+		left: 5vw;
+		color: black;
+		background-color: #edece8;
+		border-radius: 2rem;
+		z-index: 5;
+		font-size: .9rem;
+	}
+
+	.aboutme p {
+		padding-right: 1rem;
+		padding-left: 1rem;
+		padding-bottom: .5rem;
+		padding-top: 0px;
+		margin: 0px;
+		text-align: justify;
+	}
+
+	.title{
+		text-align: left !important;
+		padding-top: 5% !important;
+		font-size: 1.2rem;
+	}
+
+	.skillset {
+		position: absolute;
+		top: 10vh;
+		width: 60vw;
+		right: 5vw;
+		height: 94vh;
+		margin-bottom: 10vh;
+		background-color: #ccdde8;
+		border-radius: 1rem;
+		z-index: 4;
+	}
+
+	.listLenguages {
+		top:19vh;
+	  	right: 4vw;
+	}
+
+	.listFrameworks {
+		top:69vh;
+	  	right: 4vw;
+	}
+
+	div.skillset ul{
+		list-style-type: none;
+		position: absolute;
+	  	margin: 0;
+	  	width: 40vw;
+	  	overflow: hidden;
+	  	background-color: transparent;
+	}
+
+	div.skillset ul li{
+		float: left;
+		background-color: #178fd6;
+		margin:1.4vw;
+	  	border-radius: .4rem;
+	}
+
+	div.skillset ul li a{
+		display: block;
+	  	color: white;
+	  	text-align: center;
+	  	font-size: 2rem;
+	  	vertical-align: middle;
+		line-height: 7vw;
+	  	width: 7vw;
+	  	height: 7vw;
+	  	text-decoration: none;
+	}
+
+	div.skillset ul li a span{
+		font-size: 1rem;
+		color: black;
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+
+	.titleSkillset {
+		position: absolute;
+		top:2vh;
+		left: 13vw;
+		font-size: 1.5rem;
+	}
+
+	.lenguagesSkillset {
+		position: absolute;
+		top:12vh;
+		left: 13vw;
+	}
+
+	.frameworkSkillset {
+		position: absolute;
+		top:62vh;
+		left: 13vw;
+	}
+
+	.skillsetInner {
+		margin-left: 40%;
+		padding-left: 40%;
+	}
+
+	.sectionTwo {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background-color: transparent;
+	}
+
+	.containerProjects {
+		position: absolute;
+		top: 15vh;
+		right: 50%;
+		margin-right: -40vw;
+		width: 80vw;
+		height: 80vh;
+		background-color: #178fd6;
+		border-radius: 1rem;
+		z-index: 5;
+	}
+
+	.arrowLeft {
+		position: absolute;
+		top:52vh;
+		left: 7vw;
+		z-index: 6;
+	}
+
+	.arrowLeft a {
+		display: block;
+		text-align: center;
+		width: 5vw;
+		height: 5vw;
+		line-height: 5vw;
+		vertical-align: center;
+		font-size: 2rem;
+		border-radius: 2.5vw;
+		background-color: #edece8;
+		cursor: pointer;
+	}
+
+	.arrowRight {
+		position: absolute;
+		top: 52vh;
+		right: 7vw;
+		z-index: 6;
+	}
+
+	.arrowRight a {
+		display: block;
+		text-align: center;
+		width: 5vw;
+		height: 5vw;
+		line-height: 5vw;
+		vertical-align: center;
+		font-size: 2rem;
+		border-radius: 2.5vw;
+		background-color: #edece8;
+		cursor: pointer;
+	}
+
+	.projectCard1 {
+		position: absolute;
+		height: 60vh;
+		width: 20vw;
+		top: 10vh;
+		left: 5vw;
+		background-color: white;
+		border-radius: 1rem;
+		z-index: 6;
+	}
+
+	.projectCard2 {
+		position: absolute;
+		height: 60vh;
+		width: 20vw;
+		top: 10vh;
+		left: 30vw;
+		background-color: white;
+		border-radius: 1rem;
+		z-index: 6;
+	}
+
+	.projectCard3 {
+		position: absolute;
+		height: 60vh;
+		width: 20vw;
+		top: 10vh;
+		left: 55vw;
+		background-color: white;
+		border-radius: 1rem;
+		z-index: 6;
+	}
+
+	.containerImageProject {
+		position: inherit;
+		top: 5%;
+		left: 10%;
+		max-height: 30%;
+		max-width:  80%;
+	}
+
+	.imageProject {
+		max-height: 100%;
+		max-width: 100%;
+		border-radius: 10%;
+	}
+
+}
+
+.layer1 {
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.layer2 {
+	-webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.layer3 {
+	-webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.layer4 {
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+}

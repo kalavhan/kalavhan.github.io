@@ -1,0 +1,400 @@
+@media only screen and (min-width: 1289px) {
+	html{
+	font-size: 2vw;
+	font-family: "modern_sanslight";
+	background: url(../imgs/background.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+	.showOnsmall {
+		display: none;
+	}
+
+	body {
+		background-color: #fffcf6;
+		z-index: 0;
+	}
+	.containerHeader{
+		position: absolute;
+		top:0rem;
+		left: 0rem;
+		z-index: 6;
+		width: 100%;
+		height: 22rem;
+		background-color: #4646FF;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+
+	}
+
+	.navbar{
+		position: fixed;
+		top:0rem;
+		left: 0rem;
+		z-index: 5;
+		max-width: 6000px !important;
+		width: 100%;
+		height: 2.6rem;
+		background-color: #4646FF;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+	}
+
+	.navbarws{
+		position: fixed;
+		top:0rem;
+		left: 0rem;
+		z-index: 7;
+		max-width: 6000px !important;
+		width: 100%;
+		height: 2.6rem;
+		background-color: #4646FF;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+
+	}
+
+	.containerNavbar {
+		position: fixed;
+		top:0rem;
+		z-index: 12;
+		max-width: 6000px;
+		min-width: 100vw;
+		background-color: #4646FF;
+	}
+
+	div.containerNavbar ul{
+		list-style-type: none;
+		position: absolute;
+	  	margin: 0;
+	  	padding: 0;
+	  	overflow: hidden;
+		background-color: #4646FF;
+	}
+
+	div.containerNavbar ul li{
+		float: left;
+	}
+
+	div.containerNavbar ul li a{
+		display: block;
+	  	color: white;
+	  	text-align: center;
+	  	font-size: 1.2rem;
+	  	padding: .3rem;
+	  	text-decoration: none;
+	}
+
+	div.containerNavbar ul li a:hover{
+	  	font-size: 1.6rem;
+	}
+
+	.logoName {
+		font-family: "great_fighter" !important;
+	}
+
+	.header {
+		position: relative;
+		height: 80vh;
+		width: 100%;
+		background-color: transparent;
+		top:0px;
+		max-height: 600px;
+	}
+
+	.socialButtons {
+		position:absolute;
+		top: 2.2rem;
+		right: 1rem;
+		z-index: 6;
+		opacity: 0;
+		transition: 1800ms;
+	}
+	.socialButtons.animate{
+		position:absolute;
+		top: 2.4rem;
+		right: 1rem;
+		z-index: 6;
+		opacity: 1;
+	}
+
+	div.socialButtons ul{
+		list-style-type: none;
+	  	margin: 0;
+	  	padding: 0;
+	  	overflow: visible;
+	  	background-color: transparent;
+	}
+
+	div.socialButtons ul li{
+		float: left;
+	}
+
+	div.socialButtons ul li a{
+		display: block;
+	  	color: white;
+	  	text-align: center;
+	  	font-size: 1.5rem;
+	  	padding: .2rem;
+	  	text-decoration: none;
+	  	border-radius: .4rem;
+	}
+
+	div.socialButtons ul li a:hover{
+		display: block;
+	  	color: black;
+	  	text-align: center;
+	  	font-size: 2rem;
+	  	padding: .2rem;
+	  	text-decoration: none;
+	}
+
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	/* Tooltip text */
+	.tooltip .tooltiptext {
+	  visibility: hidden;
+	  background-color: black;
+	  color: #fff;
+	  text-align: center;
+	  padding: 0.3rem;
+	  border-radius: 6px;
+	  font-size: 0.5rem;
+	  /* Position the tooltip text - see examples below! */
+	  position: absolute;
+	  z-index: 6;
+	  width: 2rem;
+	  top: 2.2rem;
+	  right: 50%; 
+	  margin-right: -1.2rem; /* Use half of the width (120/2 = 60), to center the tooltip */
+	  f
+	}
+
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.tooltip:hover .tooltiptext {
+	  visibility: visible;
+	}
+
+	.textNavbar {
+		opacity: 0;
+		transition: 1500ms;
+	}
+
+	.textNavbar.animate{
+		opacity: 1;
+	}
+
+	.welcome {
+		opacity: 0;
+		position:absolute;
+		width: 22rem;
+		font-size: 1.9rem;
+		text-align: center;
+		top:3.6rem;
+		right: 50%;
+		margin-right: -11rem;
+		z-index: 6;
+		transition: 1800ms;
+	}
+	.welcome p{
+		margin:0px;
+		color:white;
+	}
+
+	.welcome.animate{
+		opacity: 1;
+	}
+
+	.shapeCartoon {
+		position: absolute;
+		top:6.5rem; 
+		height: 7rem;
+		width: 7rem;
+		right: 50%;
+		margin-right: -3.5rem;
+		border-radius: 3.5rem;
+		border-style: solid;
+		border-color: #CCCCCC;
+		background-color: white;
+		z-index: 6;
+		overflow: hidden;
+		opacity: 0;
+		transition: 1500ms;
+	}
+
+	.shapeCartoon.animate{
+		opacity: 1;
+		position: absolute;
+		top:6.5rem; 
+		height: 7rem;
+		width: 7rem;
+		right: 50%;
+		margin-right: -3.5rem;
+		border-radius: 3.5rem;
+		border-style: solid;
+		border-color: #CCCCCC;
+		z-index: 6;
+		overflow: hidden;
+		transition: 1800ms;
+	}
+
+	.shapeCartoon img{
+		max-height: 100%;
+		max-width: 100%;
+		margin-left: auto;
+	  	margin-right: auto;
+	  	display: block;
+	  	z-index: 2;
+	}
+
+	.briefInfo {
+		opacity: 0;
+		position: absolute;
+		top:14.5rem;
+		width: 15rem;
+		right: 50%;
+		color:white;
+		margin-right: -7.5rem;
+		text-align: center;
+		font-size: 1.1rem;
+		z-index: 6;
+		transition: 1500ms;
+	}
+
+	.briefInfo.animate{
+		opacity: 1;
+		position: absolute;
+		top:14.5rem;
+		width: 15rem;
+		right: 50%;
+		color:white;
+		margin-right: -7.5rem;
+		text-align: center;
+		font-size: 1.1rem;
+		z-index: 6;
+	}
+
+	.briefInfo p{
+		margin:0px;
+	}
+
+	.seemore{
+		position: absolute;
+		top:19rem;
+		width: 6rem;
+		color: white;
+		right: 50%;
+		margin-right: -3rem;
+		text-align: center;
+		z-index: 6;
+		font-size: .7rem;
+		cursor: pointer;
+	}
+
+	.seemore p{
+		padding: 0px;
+		margin:0px;
+	}
+
+	.jump {
+    	-webkit-animation: mover 1s infinite  alternate;
+    	animation: mover 1s infinite  alternate;
+	}
+	.jump {
+    	-webkit-animation: mover 1s infinite  alternate;
+    	animation: mover 1s infinite  alternate;
+	}
+	@-webkit-keyframes mover {
+    	0% { transform: translateY(0); }
+    	100% { transform: translateY(-.4rem); }
+	}
+	@keyframes mover {
+    	0% { transform: translateY(0); }
+    	100% { transform: translateY(-.4rem); }
+	}
+
+	.sectionOne {
+		position: relative;
+		width: 100%;
+		background-color: transparent;
+		top:18rem;
+	}
+
+	.aboutme {
+		position: absolute;
+		top:0px;
+		width: 60%;
+		right: 50%;
+		margin-right: -30%;
+		color: black;
+		background-color: #edece8;
+		border-radius: 2rem;
+		z-index: 5;
+	}
+
+	.aboutme p {
+		padding-right: 1rem;
+		padding-left: 1rem;
+		text-align: center;
+	}
+
+	.title{
+		text-align: left !important;
+		font-size: 1.2rem;
+	}
+
+	.skillset {
+		position: absolute;
+		top: 12rem;
+		width: 90%;
+		right: 50%;
+		height: 20rem;
+		margin-right: -45%;
+		background-color: #ccdde8;
+		border-radius: 1rem;
+		z-index: 4;
+	}
+
+	div.skillset ul{
+		list-style-type: none;
+		position: absolute;
+	  	margin: 0;
+	  	padding-top: 4.5rem;
+	  	width: 28rem;
+	  	right: 50%;
+	  	margin-right: -14rem;
+	  	overflow: hidden;
+	  	background-color: transparent;
+	}
+
+	div.skillset ul li{
+		float: left;
+		background-color: #178fd6;
+		margin: 1rem;
+	  	border-radius: .4rem;
+	}
+
+	div.skillset ul li a{
+		display: block;
+	  	color: white;
+	  	text-align: center;
+	  	font-size: 2rem;
+	  	vertical-align: middle;
+		line-height: 3.5rem;
+	  	width: 3.5rem;
+	  	height: 3.5rem;
+	  	max-height: 3.5rem;
+	  	text-decoration: none;
+	}
+
+	.titleSkillset {
+		position: absolute;
+		top: 3rem;
+		left: 5rem;
+	}
+}
