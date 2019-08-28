@@ -1,7 +1,9 @@
+<?php ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Josue Brigido - Portafolio</title>
+        <html lang="es">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery.js"></script>
         <script src="js/all.js"></script>
